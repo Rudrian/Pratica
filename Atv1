@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class pratica2 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		double valor1;
+		
+		System.out.print("Informe um valor: ");
+		valor1 = ler.nextDouble();
+		
+		if (valor1 % 5 == 0) {
+			System.out.println("O numero " + valor1 + " e multiplo de 5");
+		}
+		if (valor1 % 5 != 0) {
+			System.out.println("O numero " + valor1 + " não e multiplo de 5");
+			ler.close();
+		}
+
+	}
+
+}
