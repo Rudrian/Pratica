@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class pratica3 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int senhaofc, senhafake;
+		double n1,n2,soma;
+		
+		System.out.print("Cadastre sua senha( Apenas numeros ): ");
+		senhaofc = ler.nextInt();
+		
+		System.out.print("Digite um numero: ");
+		n1 = ler.nextDouble();
+		System.out.print("Digite um numero: ");
+		n2 = ler.nextDouble();
+        soma = n1+n2;
+        
+        System.out.print("Digite a sua senha para desbloquear a soma: ");
+        senhafake = ler.nextInt();
+        
+        if (senhafake == senhaofc) {
+        	System.out.println("A soma é : "+soma);
+        }
+        if (senhafake != senhaofc) {
+        	System.out.println("Erro! Senha incorreta!" );
+        }
+        ler.close();
+	}
+
+}
